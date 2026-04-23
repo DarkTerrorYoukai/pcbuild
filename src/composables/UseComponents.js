@@ -589,165 +589,165 @@ const pcComponents = reactive({
     },
     {
         id: 'gpu_3',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        brand: 'Palit',
+        model: 'GeForce RTX 5060 Dual',
+        vram_gb: 8,
+        tdp_w: 145,     
+        recommended_psu_w: 550, 
+        price: 30999
     },
     {
         id: 'gpu_4',
-        brand: '',
-        model: '',
+        brand: 'Palit',
+        model: 'GeForce RTX 5070 Infinity 3',
         vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        tdp_w: 250,     // Важно для расчета БП
+        recommended_psu_w: 650, // рекомендованная мощность блока питания
+        price: 57999
     },
     {
         id: 'gpu_5',
-        brand: '',
-        model: '',
+        brand: 'MSI',
+        model: 'GeForce RTX 5070 VENTUS 3X OC',
         vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        tdp_w: 250,     // Важно для расчета БП
+        recommended_psu_w: 650, // рекомендованная мощность блока питания
+        price: 60999
     },
     {
         id: 'gpu_6',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
+        brand: 'MSI',
+        model: 'GeForce RTX 5060 VENTUS 2X OC',
+        vram_gb: 8, // видеопамять 
+        tdp_w: 145,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        price: 31999
     },
     {
         id: 'gpu_7',
-        brand: '',
-        model: '',
+        brand: 'GIGABYTE',
+        model: 'GeForce RTX 5070 WINDFORCE OC SFF',
         vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        tdp_w: 250,     // Важно для расчета БП
+        recommended_psu_w: 750, // рекомендованная мощность блока питания
+        price: 61999
     },
     {
         id: 'gpu_8',
-        brand: '',
-        model: '',
+        brand: 'ASUS',
+        model: 'GeForce RTX 5070 PRIME OC Edition',
         vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        tdp_w: 270,     // Важно для расчета БП
+        recommended_psu_w: 750, // рекомендованная мощность блока питания
+        price: 69999
     },
     {
         id: 'gpu_9',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        brand: 'Palit',
+        model: 'GeForce RTX 5080 GamingPro',
+        vram_gb: 16, // видеопамять 
+        tdp_w: 360,     // Важно для расчета БП
+        recommended_psu_w: 850, // рекомендованная мощность блока питания
+        price: 120999
     },
     {
         id: 'gpu_10',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        brand: 'Palit',
+        model: 'GeForce RTX 5060 Ti Infinity 3 V1',
+        vram_gb: 16, // видеопамять 
+        tdp_w: 180,     // Важно для расчета БП
+        recommended_psu_w: 600, // рекомендованная мощность блока питания
+        price: 49999
     },
     {
         id: 'gpu_11',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        brand: 'Palit',
+        model: 'GeForce RTX 5060 Ti Infinity 3 OC',
+        vram_gb: 16, // видеопамять 
+        tdp_w: 180,     // Важно для расчета БП
+        recommended_psu_w: 600, // рекомендованная мощность блока питания
+        price: 52799
     },
     {
         id: 'gpu_12',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
+        brand: 'Palit',
+        model: 'GeForce RTX 5060 Infinity 2 OC',
+        vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        price: 33300
     },
     {
         id: 'gpu_13',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        brand: 'Palit',
+        model: 'GeForce RTX 5070 Ti GamingPro-S',
+        vram_gb: 16, // видеопамять 
+        tdp_w: 250,     // Важно для расчета БП
+        recommended_psu_w: 600, // рекомендованная мощность блока питания
+        price: 89999
     },
     {
         id: 'gpu_14',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
+        brand: 'MSI',
+        model: 'GeForce RTX 3050 VENTUS 2X XS OC',
+        vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        price: 24699
     },
     {
         id: 'gpu_15',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
+        brand: 'Palit',
+        model: 'GeForce RTX 5060 Dual OC',
+        vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        price: 31999
     },
     {
         id: 'gpu_16',
-        brand: '',
-        model: '',
+        brand: 'Palit',
+        model: 'GeForce RTX 5070 Infinity 3 OC',
         vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        tdp_w: 250,     // Важно для расчета БП
+        recommended_psu_w: 600, // рекомендованная мощность блока питания
+        price: 60000
     },
     {
         id: 'gpu_17',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
-        tdp_w: 170,     // Важно для расчета БП
-        recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        brand: 'MSI',
+        model: 'GeForce RTX 5070 Ti GAMING TRIO OC',
+        vram_gb: 16, // видеопамять 
+        tdp_w: 270,     // Важно для расчета БП
+        recommended_psu_w: 700, // рекомендованная мощность блока питания
+        price: 107999
     },
     {
         id: 'gpu_18',
-        brand: '',
-        model: '',
+        brand: 'MSI',
+        model: 'GeForce RTX 3060 VENTUS 2X OC (LHR)',
         vram_gb: 12, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        price: 39999
     },
     {
         id: 'gpu_19',
-        brand: '',
-        model: '',
-        vram_gb: 12, // видеопамять 
+        brand: 'MSI',
+        model: 'GeForce RTX 5060 GAMING OC',
+        vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        price: 35999
     },
     {
         id: 'gpu_20',
-        brand: '',
-        model: '',
+        brand: 'ASRock',
+        model: 'AMD Radeon RX 6600 Challenger D',
         vram_gb: 12, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
-        price: 35000
+        price: 25999
     },
     ],
     storage: [
@@ -845,106 +845,106 @@ const pcComponents = reactive({
     psu: [
     {
         id: 'psu_1',
-        brand: 'Deepcool',
+        brand: 'DEEPCOOL',
         model: 'DQ750',
         wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        price: 3000
     },
     {
         id: 'psu_2',
         brand: 'Corsair',
         model: 'SF600',
         wattage: 600,
-        price: 15000
+        price: 3000
     },
     {
         id: 'psu_3',
-        brand: '',
-        model: '',
+        brand: 'DEEPCOOL',
+        model: 'PF750',
         wattage: 750, 
-        price: 9000
+        price: 3699
     },
     {
         id: 'psu_4',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'PF600',
+        wattage: 600, // мощность для того чтобы запитать весь пк
+        price: 3200
     },
     {
         id: 'psu_5',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'PF450',
+        wattage: 450, // мощность для того чтобы запитать весь пк
+        price: 2700
     },
     {
         id: 'psu_6',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
+        brand: 'Cougar',
+        model: 'STC 600',
+        wattage: 600, // мощность для того чтобы запитать весь пк
         price: 9000
     },
     {
         id: 'psu_7',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'Cougar',
+        model: 'GR 850',
+        wattage: 850, // мощность для того чтобы запитать весь пк
+        price: 6000
     },
     {
         id: 'psu_8',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'PF500',
+        wattage: 500, // мощность для того чтобы запитать весь пк
+        price: 3599
     },
     {
         id: 'psu_9',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'PF650',
+        wattage: 650, // мощность для того чтобы запитать весь пк
+        price: 3400
     },
     {
         id: 'psu_10',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'PF700',
+        wattage: 700, // мощность для того чтобы запитать весь пк
+        price: 3700
     },
     {
         id: 'psu_11',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'GamerStorm PQ850G',
+        wattage: 850, // мощность для того чтобы запитать весь пк
+        price: 8799
     },
     {
         id: 'psu_12',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'Cougar',
+        model: 'GEC 850',
+        wattage: 850, // мощность для того чтобы запитать весь пк
+        price: 6000
     },
     {
         id: 'psu_13',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'GamerStorm PQ1000G',
+        wattage: 1000, // мощность для того чтобы запитать весь пк
+        price: 10999
     },
     {
         id: 'psu_14',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'PF400',
+        wattage: 400, // мощность для того чтобы запитать весь пк
+        price: 2350
     },
     {
         id: 'psu_15',
-        brand: 'Deepcool',
-        model: 'DQ750',
+        brand: 'Cougar',
+        model: 'GR 750',
         wattage: 750, // мощность для того чтобы запитать весь пк
         price: 9000
     },
@@ -953,35 +953,35 @@ const pcComponents = reactive({
         brand: 'Deepcool',
         model: 'DQ750',
         wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        price: 5800
     },
     {
         id: 'psu_17',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'DEEPCOOL',
+        model: 'PF550',
+        wattage: 550, // мощность для того чтобы запитать весь пк
+        price: 3099
     },
     {
         id: 'psu_18',
-        brand: 'Deepcool',
-        model: 'DQ750',
-        wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        brand: 'Cougar',
+        model: 'STC500 500W',
+        wattage: 500, // мощность для того чтобы запитать весь пк
+        price: 2399
     },
     {
         id: 'psu_19',
-        brand: 'Deepcool',
-        model: 'DQ750',
+        brand: 'DEEPCOOL',
+        model: 'GamerStorm PQ750G',
         wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        price: 8199
     },
     {
         id: 'psu_20',
-        brand: 'Deepcool',
-        model: 'DQ750',
+        brand: 'Cougar',
+        model: 'GEC 750',
         wattage: 750, // мощность для того чтобы запитать весь пк
-        price: 9000
+        price: 6300
     },
     ],
 });
