@@ -18,12 +18,20 @@ import Payment from "./components/payment.vue";
 
 import Randombuild from "./components/randombuild.vue";
 
+import Madebuilds from "./components/madebuilds.vue";
+
+import Guides from './components/guides.vue'
+
 const routes = [
     {path:'/main',component:Main,name:'main'},
 
     {path:'/:pathName(.*)', component: Page404, name:'404'},
 
     {path:'/components', component: Components, name:'components'},
+
+    {path:'/madebuilds', component: Madebuilds, name:'madebuilds'},
+
+    {path:'/guides', component: Guides, name:'guides'},
 
     {path:'/build', component: Build, name:'build', children:[
         {path:'randombuild', component:Randombuild, name:'randombuild'},
