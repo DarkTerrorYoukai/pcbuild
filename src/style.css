@@ -21,8 +21,9 @@
     --blue: #0673f4;
     --white: #fdfdfd;
     --light-gray: #d1d1d1;
+    --black: #010810;
 }
 
 body {
-    background-color: #010810;
+    background-color: var(--black);
 }

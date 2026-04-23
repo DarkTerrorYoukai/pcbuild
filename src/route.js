@@ -22,6 +22,8 @@ import Madebuilds from "./components/madebuilds.vue";
 
 import Guides from './components/guides.vue'
 
+import Lobby from "./components/lobby.vue";
+
 const routes = [
     {path:'/main',component:Main,name:'main'},
 
@@ -32,6 +34,8 @@ const routes = [
     {path:'/madebuilds', component: Madebuilds, name:'madebuilds'},
 
     {path:'/guides', component: Guides, name:'guides'},
+
+    {path:'/lobby', component: Lobby, name:'lobby'},
 
     {path:'/build', component: Build, name:'build', children:[
         {path:'randombuild', component:Randombuild, name:'randombuild'},

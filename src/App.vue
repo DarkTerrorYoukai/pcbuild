@@ -1,6 +1,16 @@
 <script setup>
+import { ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
 
+const isThemeLight = ref(true)
+
+function changeThemeToLight () {
+    isThemeLight.value = true
+}
+
+function changeThemeToDark () {
+    isThemeLight.value = false
+}
 </script>
 
 <template>
@@ -14,7 +24,10 @@ import { RouterLink, RouterView } from 'vue-router';
             <RouterLink :to="{name: 'guides'}" class="header_menu_item">Гайды</RouterLink>
         </div>
         <div class="header_right">
-            <img src="/img/Search.svg" alt="кнопка поиска" class="header_search_btn">
+            <img src="/img/Search.svg" alt="кнопка поиска" class="header_right_btn">
+            <img @click="changeThemeToDark" v-if="isThemeLight" src="/img/Moon.svg" alt="кнопка смены темы на темную" class="header_right_btn">
+            <img @click="changeThemeToLight" v-if="!isThemeLight" src="/img/Sun.svg" alt="кнопка смены темы на светлую" class="header_right_btn">
+            <RouterLink :to="{name: 'lobby'}" class="log_in_btn">Войти</RouterLink>
         </div>
     </header>
 
@@ -25,14 +38,23 @@ import { RouterLink, RouterView } from 'vue-router';
 <style scoped>
 /* ВЕРСТКА ШАПКИ */
 .header {
+    padding: 10px 10px;
     height: 50px;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.header_right {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -68,8 +90,21 @@ import { RouterLink, RouterView } from 'vue-router';
 }
 
 /* ПРАВАЯ ЧАСТЬ ШАПКИ */
-.header_search_btn {
-    width: 25px;
-    height: 25px;
+.header_right_btn {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.log_in_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: 'JetBrains_Mono';
+    text-decoration: none;
+    border-radius: 10px;
 }
 </style>
