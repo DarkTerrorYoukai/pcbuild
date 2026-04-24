@@ -572,7 +572,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_1',
         brand: 'Gigabyte',
-        model: 'GeForce RTX 3060 Gaming OC',
+        name: 'GeForce RTX 3060 Gaming OC',
         vram_gb: 12, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -581,7 +581,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_2',
         brand: 'Sapphire',
-        model: 'Radeon RX 7800 XT PURE',
+        name: 'Radeon RX 7800 XT PURE',
         vram_gb: 16,
         tdp_w: 263,
         recommended_psu_w: 700,
@@ -590,7 +590,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_3',
         brand: 'Palit',
-        model: 'GeForce RTX 5060 Dual',
+        name: 'GeForce RTX 5060 Dual',
         vram_gb: 8,
         tdp_w: 145,     
         recommended_psu_w: 550, 
@@ -599,7 +599,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_4',
         brand: 'Palit',
-        model: 'GeForce RTX 5070 Infinity 3',
+        name: 'GeForce RTX 5070 Infinity 3',
         vram_gb: 12, // видеопамять 
         tdp_w: 250,     // Важно для расчета БП
         recommended_psu_w: 650, // рекомендованная мощность блока питания
@@ -608,7 +608,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_5',
         brand: 'MSI',
-        model: 'GeForce RTX 5070 VENTUS 3X OC',
+        name: 'GeForce RTX 5070 VENTUS 3X OC',
         vram_gb: 12, // видеопамять 
         tdp_w: 250,     // Важно для расчета БП
         recommended_psu_w: 650, // рекомендованная мощность блока питания
@@ -617,7 +617,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_6',
         brand: 'MSI',
-        model: 'GeForce RTX 5060 VENTUS 2X OC',
+        name: 'GeForce RTX 5060 VENTUS 2X OC',
         vram_gb: 8, // видеопамять 
         tdp_w: 145,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -626,7 +626,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_7',
         brand: 'GIGABYTE',
-        model: 'GeForce RTX 5070 WINDFORCE OC SFF',
+        name: 'GeForce RTX 5070 WINDFORCE OC SFF',
         vram_gb: 12, // видеопамять 
         tdp_w: 250,     // Важно для расчета БП
         recommended_psu_w: 750, // рекомендованная мощность блока питания
@@ -635,7 +635,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_8',
         brand: 'ASUS',
-        model: 'GeForce RTX 5070 PRIME OC Edition',
+        name: 'GeForce RTX 5070 PRIME OC Edition',
         vram_gb: 12, // видеопамять 
         tdp_w: 270,     // Важно для расчета БП
         recommended_psu_w: 750, // рекомендованная мощность блока питания
@@ -644,7 +644,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_9',
         brand: 'Palit',
-        model: 'GeForce RTX 5080 GamingPro',
+        name: 'GeForce RTX 5080 GamingPro',
         vram_gb: 16, // видеопамять 
         tdp_w: 360,     // Важно для расчета БП
         recommended_psu_w: 850, // рекомендованная мощность блока питания
@@ -653,7 +653,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_10',
         brand: 'Palit',
-        model: 'GeForce RTX 5060 Ti Infinity 3 V1',
+        name: 'GeForce RTX 5060 Ti Infinity 3 V1',
         vram_gb: 16, // видеопамять 
         tdp_w: 180,     // Важно для расчета БП
         recommended_psu_w: 600, // рекомендованная мощность блока питания
@@ -662,7 +662,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_11',
         brand: 'Palit',
-        model: 'GeForce RTX 5060 Ti Infinity 3 OC',
+        name: 'GeForce RTX 5060 Ti Infinity 3 OC',
         vram_gb: 16, // видеопамять 
         tdp_w: 180,     // Важно для расчета БП
         recommended_psu_w: 600, // рекомендованная мощность блока питания
@@ -671,7 +671,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_12',
         brand: 'Palit',
-        model: 'GeForce RTX 5060 Infinity 2 OC',
+        name: 'GeForce RTX 5060 Infinity 2 OC',
         vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -680,7 +680,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_13',
         brand: 'Palit',
-        model: 'GeForce RTX 5070 Ti GamingPro-S',
+        name: 'GeForce RTX 5070 Ti GamingPro-S',
         vram_gb: 16, // видеопамять 
         tdp_w: 250,     // Важно для расчета БП
         recommended_psu_w: 600, // рекомендованная мощность блока питания
@@ -689,7 +689,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_14',
         brand: 'MSI',
-        model: 'GeForce RTX 3050 VENTUS 2X XS OC',
+        name: 'GeForce RTX 3050 VENTUS 2X XS OC',
         vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -698,7 +698,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_15',
         brand: 'Palit',
-        model: 'GeForce RTX 5060 Dual OC',
+        name: 'GeForce RTX 5060 Dual OC',
         vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -707,7 +707,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_16',
         brand: 'Palit',
-        model: 'GeForce RTX 5070 Infinity 3 OC',
+        name: 'GeForce RTX 5070 Infinity 3 OC',
         vram_gb: 12, // видеопамять 
         tdp_w: 250,     // Важно для расчета БП
         recommended_psu_w: 600, // рекомендованная мощность блока питания
@@ -716,7 +716,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_17',
         brand: 'MSI',
-        model: 'GeForce RTX 5070 Ti GAMING TRIO OC',
+        name: 'GeForce RTX 5070 Ti GAMING TRIO OC',
         vram_gb: 16, // видеопамять 
         tdp_w: 270,     // Важно для расчета БП
         recommended_psu_w: 700, // рекомендованная мощность блока питания
@@ -725,7 +725,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_18',
         brand: 'MSI',
-        model: 'GeForce RTX 3060 VENTUS 2X OC (LHR)',
+        name: 'GeForce RTX 3060 VENTUS 2X OC (LHR)',
         vram_gb: 12, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -734,7 +734,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_19',
         brand: 'MSI',
-        model: 'GeForce RTX 5060 GAMING OC',
+        name: 'GeForce RTX 5060 GAMING OC',
         vram_gb: 8, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -743,7 +743,7 @@ const pcComponents = reactive({
     {
         id: 'gpu_20',
         brand: 'ASRock',
-        model: 'AMD Radeon RX 6600 Challenger D',
+        name: 'AMD Radeon RX 6600 Challenger D',
         vram_gb: 12, // видеопамять 
         tdp_w: 170,     // Важно для расчета БП
         recommended_psu_w: 550, // рекомендованная мощность блока питания
@@ -846,142 +846,179 @@ const pcComponents = reactive({
     {
         id: 'psu_1',
         brand: 'DEEPCOOL',
-        model: 'DQ750',
+        name: 'DQ750',
         wattage: 750, // мощность для того чтобы запитать весь пк
         price: 3000
     },
     {
         id: 'psu_2',
         brand: 'Corsair',
-        model: 'SF600',
+        name: 'SF600',
         wattage: 600,
         price: 3000
     },
     {
         id: 'psu_3',
         brand: 'DEEPCOOL',
-        model: 'PF750',
+        name: 'PF750',
         wattage: 750, 
         price: 3699
     },
     {
         id: 'psu_4',
         brand: 'DEEPCOOL',
-        model: 'PF600',
+        name: 'PF600',
         wattage: 600, // мощность для того чтобы запитать весь пк
         price: 3200
     },
     {
         id: 'psu_5',
         brand: 'DEEPCOOL',
-        model: 'PF450',
+        name: 'PF450',
         wattage: 450, // мощность для того чтобы запитать весь пк
         price: 2700
     },
     {
         id: 'psu_6',
         brand: 'Cougar',
-        model: 'STC 600',
+        name: 'STC 600',
         wattage: 600, // мощность для того чтобы запитать весь пк
         price: 9000
     },
     {
         id: 'psu_7',
         brand: 'Cougar',
-        model: 'GR 850',
+        name: 'GR 850',
         wattage: 850, // мощность для того чтобы запитать весь пк
         price: 6000
     },
     {
         id: 'psu_8',
         brand: 'DEEPCOOL',
-        model: 'PF500',
+        name: 'PF500',
         wattage: 500, // мощность для того чтобы запитать весь пк
         price: 3599
     },
     {
         id: 'psu_9',
         brand: 'DEEPCOOL',
-        model: 'PF650',
+        name: 'PF650',
         wattage: 650, // мощность для того чтобы запитать весь пк
         price: 3400
     },
     {
         id: 'psu_10',
         brand: 'DEEPCOOL',
-        model: 'PF700',
+        name: 'PF700',
         wattage: 700, // мощность для того чтобы запитать весь пк
         price: 3700
     },
     {
         id: 'psu_11',
         brand: 'DEEPCOOL',
-        model: 'GamerStorm PQ850G',
+        name: 'GamerStorm PQ850G',
         wattage: 850, // мощность для того чтобы запитать весь пк
         price: 8799
     },
     {
         id: 'psu_12',
         brand: 'Cougar',
-        model: 'GEC 850',
+        name: 'GEC 850',
         wattage: 850, // мощность для того чтобы запитать весь пк
         price: 6000
     },
     {
         id: 'psu_13',
         brand: 'DEEPCOOL',
-        model: 'GamerStorm PQ1000G',
+        name: 'GamerStorm PQ1000G',
         wattage: 1000, // мощность для того чтобы запитать весь пк
         price: 10999
     },
     {
         id: 'psu_14',
         brand: 'DEEPCOOL',
-        model: 'PF400',
+        name: 'PF400',
         wattage: 400, // мощность для того чтобы запитать весь пк
         price: 2350
     },
     {
         id: 'psu_15',
         brand: 'Cougar',
-        model: 'GR 750',
+        name: 'GR 750',
         wattage: 750, // мощность для того чтобы запитать весь пк
         price: 9000
     },
     {
         id: 'psu_16',
         brand: 'Deepcool',
-        model: 'DQ750',
+        name: 'DQ750',
         wattage: 750, // мощность для того чтобы запитать весь пк
         price: 5800
     },
     {
         id: 'psu_17',
         brand: 'DEEPCOOL',
-        model: 'PF550',
+        name: 'PF550',
         wattage: 550, // мощность для того чтобы запитать весь пк
         price: 3099
     },
     {
         id: 'psu_18',
         brand: 'Cougar',
-        model: 'STC500 500W',
+        name: 'STC500 500W',
         wattage: 500, // мощность для того чтобы запитать весь пк
         price: 2399
     },
     {
         id: 'psu_19',
         brand: 'DEEPCOOL',
-        model: 'GamerStorm PQ750G',
+        name: 'GamerStorm PQ750G',
         wattage: 750, // мощность для того чтобы запитать весь пк
         price: 8199
     },
     {
         id: 'psu_20',
         brand: 'Cougar',
-        model: 'GEC 750',
+        name: 'GEC 750',
         wattage: 750, // мощность для того чтобы запитать весь пк
         price: 6300
     },
     ],
-});
+})
+
+function cpuAddToBuild(componentID){
+  currentBuild.cpu = pcComponents.processors.find((comp)=>comp.id===componentID)
+}
+
+function gpuAddToBuild(componentID){
+  currentBuild.gpu = pcComponents.gpu.find((comp)=>comp.id===componentID)
+}
+
+function diskAddToBuild(componentID){
+  currentBuild.disk = pcComponents.storage.find((comp)=>comp.id===componentID)
+}
+
+function ramAddToBuild(componentID){
+  currentBuild.ram = pcComponents.ram.find((comp)=>comp.id===componentID)
+}
+
+function psuAddToBuild(componentID){
+  currentBuild.psu = pcComponents.psu.find((comp)=>comp.id===componentID)
+}
+
+function mbAddToBuild(componentID){
+  currentBuild.mb = pcComponents.motherboards.find((comp)=>comp.id===componentID)
+}
+
+const currentBuild = reactive({
+    cpu: null,
+    gpu: null,
+    ram: null,
+    disk: null,
+    psu: null,
+    mb: null
+})
+
+export default function useComponents(){
+  return {pcComponents,cpuAddToBuild, gpuAddToBuild, diskAddToBuild, ramAddToBuild, psuAddToBuild, mbAddToBuild, currentBuild}
+}
