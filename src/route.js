@@ -24,12 +24,31 @@ import Guides from './components/guides.vue'
 
 import Lobby from "./components/lobby.vue";
 
+import sortCPU from "./components/sortCPU.vue";
+
+import sortGPU from "./components/sortGPU.vue";
+
+import sortPSU from "./components/sortPSU.vue";
+
+import sortRAM from "./components/sortRAM.vue";
+
+import sortStorage from "./components/sortStorage.vue";
+
+import sortMother from "./components/sortMother.vue";
+
 const routes = [
     {path:'/main',component:Main,name:'main'},
 
     {path:'/:pathName(.*)', component: Page404, name:'404'},
 
-    {path:'/components', component: Components, name:'components'},
+    {path:'/components', component: Components, name:'components', children:[
+        {path:'sortCPU', component:sortCPU, name:'sortCPU'},
+        {path:'sortGPU', component:sortGPU, name:'sortGPU'},
+        {path:'sortRAM', component:sortRAM, name:'sortRAM'},
+        {path:'sortPSU', component:sortPSU, name:'sortPSU'},
+        {path:'sortStorage', component:sortStorage, name:'sortStorage'},
+        {path:'sortMother', component:sortMother, name:'sortMother'}
+    ] },
 
     {path:'/madebuilds', component: Madebuilds, name:'madebuilds'},
 

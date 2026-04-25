@@ -426,7 +426,7 @@ const pcComponents = reactive({
     {
       id: 'ram_5',
       brand: 'Adata',
-      name: 'Adata Premier 16GB DDR4-3200',
+      name: 'Premier 16GB DDR4-3200',
       type: 'DDR4', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 8, // количество гигабайт в 1 плашке
       frequency_mhz: 3200, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -435,7 +435,7 @@ const pcComponents = reactive({
     {
       id: 'ram_6',
       brand: 'ADATA',
-      name: 'ADATA 32GB DDR5-4800',
+      name: '32GB DDR5-4800',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 4800, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -444,7 +444,7 @@ const pcComponents = reactive({
     {
       id: 'ram_7',
       brand: 'ADATA',
-      name: 'ADATA Gold 32GB DDR5-5600',
+      name: 'Gold 32GB DDR5-5600',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 32, // количество гигабайт в 1 плашке
       frequency_mhz: 5600, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -453,7 +453,7 @@ const pcComponents = reactive({
     {
       id: 'ram_8',
       brand: 'APACER',
-      name: 'APACER Nox 32GB DDR5-5200',
+      name: 'Nox 32GB DDR5-5200',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 5200, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -462,7 +462,7 @@ const pcComponents = reactive({
     {
       id: 'ram_9',
       brand: 'Apacer',
-      name: 'APACER TEX 32GB DDR4-2666',
+      name: 'TEX 32GB DDR4-2666',
       type: 'DDR4', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 2666, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -471,7 +471,7 @@ const pcComponents = reactive({
     {
       id: 'ram_10',
       brand: 'G.Skill',
-      name: 'G.Skill Aegis 16GB DDR4-3200',
+      name: 'Aegis 16GB DDR4-3200',
       type: 'DDR4', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 8, // количество гигабайт в 1 плашке
       frequency_mhz: 3200, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -480,7 +480,7 @@ const pcComponents = reactive({
     {
       id: 'ram_11',
       brand: 'G.Skill',
-      name: 'G.Skill Trident Z5 RGB 32GB DDR5-6000',
+      name: 'Trident Z5 RGB 32GB DDR5-6000',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 6000, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -489,7 +489,7 @@ const pcComponents = reactive({
     {
       id: 'ram_12',
       brand: 'G.Skill',
-      name: 'G.Skill Ripjaws 32GB DDR5-6000',
+      name: 'Ripjaws 32GB DDR5-6000',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 6000, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -498,7 +498,7 @@ const pcComponents = reactive({
     {
       id: 'ram_13',
       brand: 'G.Skill',
-      name: 'G.Skill Flare X5 16GB DDR5-5600',
+      name: 'Flare X5 16GB DDR5-5600',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 8, // количество гигабайт в 1 плашке
       frequency_mhz: 5600, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -507,7 +507,7 @@ const pcComponents = reactive({
     {
       id: 'ram_14',
       brand: 'G.Skill',
-      name: 'G.SKill Trident Z5 Royal Neo 32GB DDR5-8000',
+      name: 'Trident Z5 Royal Neo 32GB DDR5-8000',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 8000, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -516,7 +516,7 @@ const pcComponents = reactive({
     {
       id: 'ram_15',
       brand: 'G.Skill',
-      name: 'G.Skill M5 Ripjaws M5 RGB 96GB DDR5-6400',
+      name: 'M5 Ripjaws M5 RGB 96GB DDR5-6400',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 48, // количество гигабайт в 1 плашке
       frequency_mhz: 6400, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -525,7 +525,7 @@ const pcComponents = reactive({
     {
       id: 'ram_16',
       brand: 'G.Skill',
-      name: 'G.Skill Trident Z5 Neo RGB 256GB DDR5-6000',
+      name: 'Trident Z5 Neo RGB 256GB DDR5-6000',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 64, // количество гигабайт в 1 плашке
       frequency_mhz: 6000, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -534,7 +534,7 @@ const pcComponents = reactive({
     {
       id: 'ram_17',
       brand: 'ADATA XPG',
-      name: 'ADATA XPG Lancer Blade 32GB DDR5-5600',
+      name: 'XPG Lancer Blade 32GB DDR5-5600',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 5600, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -543,7 +543,7 @@ const pcComponents = reactive({
     {
       id: 'ram_18',
       brand: 'ADATA XPG',
-      name: 'ADATA XPG GAMMIX D35 16GB DDR4-3600',
+      name: 'XPG GAMMIX D35 16GB DDR4-3600',
       type: 'DDR4', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 8, // количество гигабайт в 1 плашке
       frequency_mhz: 3600, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -552,7 +552,7 @@ const pcComponents = reactive({
     {
       id: 'ram_19',
       brand: 'Samsung',
-      name: 'Samsung OEM 64GB DDR5-4800',
+      name: 'OEM 64GB DDR5-4800',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 32, // количество гигабайт в 1 плашке
       frequency_mhz: 4800, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -561,7 +561,7 @@ const pcComponents = reactive({
     {
       id: 'ram_20',
       brand: 'Corsair',
-      name: 'Corsair Vengeance 32GB DDR5-6000',
+      name: 'Vengeance 32GB DDR5-6000',
       type: 'DDR5', // обязательно должен совпадать с типом оперативки на материнке и на процессоре(?)
       capacity_gb: 16, // количество гигабайт в 1 плашке
       frequency_mhz: 6000, //для фильтрации и подбора идеальной пары к процессору/плате.
@@ -772,7 +772,7 @@ const pcComponents = reactive({
     {
         id: 'disk_3',
         brand: 'Kingston',
-        name: 'Kingston NV3',
+        name: 'NV3',
         capacity_gb: 1000,
         type: 'M.2',
         interface: 'NVMe',
@@ -781,7 +781,7 @@ const pcComponents = reactive({
     {
         id: 'disk_4',
         brand: 'ADATA',
-        name: 'ADATA LEGENG 960 MAX',
+        name: 'LEGENG 960 MAX',
         capacity_gb: 4000,
         type: 'M.2',
         interface: 'NVMe',
@@ -790,7 +790,7 @@ const pcComponents = reactive({
     {
         id: 'disk_5',
         brand: 'ADATA',
-        name: 'ADATA LEGENG 860',
+        name: 'LEGENG 860',
         capacity_gb: 2000,
         type: 'M.2',
         interface: 'NVMe',
@@ -799,7 +799,7 @@ const pcComponents = reactive({
     {
         id: 'disk_6',
         brand: 'ADATA',
-        name: 'ADATA LEGENG 960',
+        name: 'LEGENG 960',
         capacity_gb: 1000,
         type: 'M.2',
         interface: 'NVMe',
@@ -808,7 +808,7 @@ const pcComponents = reactive({
     {
         id: 'disk_7',
         brand: 'Samsung',
-        name: 'Samsung 870 EVO',
+        name: '870 EVO',
         capacity_gb: 500,
         type: 'SSD',
         interface: 'SATA',
@@ -817,7 +817,7 @@ const pcComponents = reactive({
     {
         id: 'disk_8',
         brand: 'MSI',
-        name: 'MSI SPATIUM S270',
+        name: 'SPATIUM S270',
         capacity_gb: 480,
         type: 'SSD',
         interface: 'SATA',
@@ -826,7 +826,7 @@ const pcComponents = reactive({
     {
         id: 'disk_9',
         brand: 'Apacer',
-        name: 'Apacer AS350',
+        name: 'AS350',
         capacity_gb: 128,
         type: 'SSD',
         interface: 'SATA',
