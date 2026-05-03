@@ -13,16 +13,6 @@ const pcComponents = reactive({
       price: 10499
     },
     {
-      id: 'cpu_2',
-      brand: 'Intel',
-      name: 'Core i5-11400f', 
-      socket: 'LGA1200',
-      ram_type: 'DDR4',
-      tdp_w: 65,
-      has_graphics: false,
-      price: 10499
-    },
-    {
       id: 'cpu_3',
       brand: 'AMD',
       name: 'Ryzen 7 5700X',
@@ -192,16 +182,7 @@ const pcComponents = reactive({
       has_graphics: true,
       price: 14999
     },
-    {
-      id: 'cpu_20',
-      brand: 'Intel',
-      name: 'Core i9-10980XE',
-      socket: 'LGA 2066',
-      ram_type: 'DDR4',
-      tdp_w: 165,
-      has_graphics: false,
-      price: 89999
-    },
+
   ],
   motherboards: [
     {
