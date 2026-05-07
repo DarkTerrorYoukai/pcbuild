@@ -21,10 +21,15 @@
     justify-content: center;
 }
 a{
+    font-family: 'Jura_bold';
     text-decoration: none;
     align-content: center;
     min-width: 210px;
     min-height: 30px;
+    transition: 1.3s;
     color: rgb(255, 255, 255);
+}
+a:hover{
+    color: var(--blue);
 }
 </style>
