@@ -12,8 +12,6 @@ import Build from "./components/build.vue";
 
 import Buildsave from "./components/buildsave.vue";
 
-import Editbuild from "./components/editbuild.vue";
-
 import Payment from "./components/payment.vue";
 
 import Randombuild from "./components/randombuild.vue";
@@ -58,7 +56,6 @@ const routes = [
 
     {path:'/build', component: Build, name:'build', children:[
         {path:'randombuild', component:Randombuild, name:'randombuild'},
-        {path:'editbuild', component:Editbuild, name: 'editbuild'},
         {path:'autobuild', component:Autobuild, name: 'autobuild'},
         {path:'buildsave', component:Buildsave, name: 'buildsave'},
         {path:'payment', component:Payment, name: 'payment'}

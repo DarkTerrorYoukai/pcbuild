@@ -150,16 +150,20 @@ function build_form(build_type) {
 
 <template>
     <div>
-        АВТОСБОРКА ПО БЮДЖЕТУ
-        Введите бюджет:<input type="number" v-model="budget">
+        Автосборка по бюджету:
+        <input type="number"
+        min="0"
+        max="1000000"
+        step="10000"
+        v-model="budget">
         <div v-if="budget >= 28800 && budget < 50000"> <!-- при определенном бюджете должны поялвяться кнопки для выбора цели сборки -->
-            <button @click="build_form('work')">для работы</button>
+            <button @click="build_form('work')">Для работы</button>
         </div>
         <div v-if="budget >= 50000">
-            <button @click="build_form('gaming')">для игр</button>
+            <button @click="build_form('gaming')">Для игр</button>
         </div>
         <div v-if="budget >= 50000">
-            <button @click="build_form('dev')">для работы с видео/3д моделями</button>
+            <button @click="build_form('dev')">Для работы с видео/3д моделями</button>
         </div>
         <div v-if="budget >= 300000">
             <button @click="build_form('pro')">Профессиональный</button>
@@ -168,6 +172,27 @@ function build_form(build_type) {
 </template>
 
 <style scoped>
+button{
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: medium;
+    font-family:'Roboto-local', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #4797f3;
+    background-color: #020b16;
+    color: #4797f3;
+}
+input{
+    font-size: larger;
+    border-radius: 5px;
+    margin-top: 15px;
+    min-height: 25px;
+    min-width: none;
+    color: #eef0f3;
+    border: 1px solid #4797f3;
+    background-color: #020b16;
+}
 div{
     color:white;
 }

@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, ref, watch } from 'vue';
 import useComponents from '../composables/UseComponents';
+import randombuild from './randombuild.vue';
 import { computed } from 'vue';
 
 const components = useComponents()
@@ -98,7 +99,13 @@ const totalPrice = computed(() => {
                     <div class="Name-Price" >
                     <p class="Sborka">Ваша сборка</p>
                     <div class="TotalPrice">{{ totalPrice.toLocaleString() }} ₽</div>
-                    </div>
+                <div class="links">
+                    <router-link :class="botonElg" :to="{ name: 'randombuild'}" class="buildbtn">Случайная сборка</router-link>
+                    <router-link :to="{ name: 'autobuild'}" class="buildbtn">по бюджету билд</router-link>
+                    <router-link :to="{ name: 'buildsave'}" class="buildbtn">Сохранение сборки</router-link>
+                </div>
+                </div>
+                    <router-view></router-view>
                     <div class="Specs">
                         <div class="SpecNames">
                             <div class="ram">
@@ -136,26 +143,41 @@ const totalPrice = computed(() => {
                         </div>
                     </div>
         <div class="warning">{{ warning_msg }}</div>
-        
         <button class="boton-elegante">Купить все сразу</button>
         </div>
     </div>
+    <!-- ВЯЧЕСЛАВ СДЕЛАЙ СТРАНИЦУ ОПЛАТЫ -->
     <div class="buildLinks">
-        <router-link :to="{ name: 'randombuild'}" class="buildbtn">Случайный билд</router-link>
-        <router-link :to="{ name: 'editbuild'}" class="buildbtn">свой билд</router-link>
-        <router-link :to="{ name: 'autobuild'}" class="buildbtn">по бюджету билд</router-link>
-        <router-link :to="{ name: 'buildsave'}" class="buildbtn">Сохранение/выгрузка билд</router-link>
         <router-link :to="{ name: 'payment'}" class="buildbtn">Страница оплаты</router-link>
     </div>
-    <router-view></router-view>
 </template>
 
 <style scoped>
+.links{
+    padding: 5px;
+    min-height: 50px;
+    min-width: 600px;
+}
 .buildbtn{
-    color:white;
+    text-decoration: none;
+  padding: 15px;
+  border: 2px solid #1678e9;
+  background-color: #020b16;
+  color: #4797f3;
+  font-size: medium;
+  font-family:'Roboto-local', sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  margin-right: 7px;
 }
 .TotalPrice{
     font-size: 40px;
+    margin-bottom: 20px;
 }
 .SpecPrices{
     display: flex;
@@ -239,8 +261,8 @@ p{
     gap: 15px;
     justify-content: space-around;
     padding: 20px;
-    height: 700px;
-    width: 500px;
+    height: 850px;
+    width: 600px;
     margin-bottom: 50px;
 }
 .selGroup {

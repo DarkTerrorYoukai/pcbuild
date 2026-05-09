@@ -77,15 +77,47 @@ function loadbuild(){
 </script>
 
 <template>
-    <div>
+    <div class="Save-load">
         <button @click="savebuild">Сохранить сборку</button>
         <div class="code">Код сборки: {{ savedcode }} Сохраните его и вставьте в поле загрузки сборки</div>
         <button @click="loadbuild">Загрузить сборку</button>
-        <input type="text" v-model="loadcode">
+        <input placeholder="Ваш код" type="text" v-model="loadcode">
     </div>
 </template>
 
 <style scoped>
+.Save-load{
+    min-width: 550px;
+    min-height: 130px;
+}
+.code{
+    margin-left: 10px;
+}
+input{
+    font-size: larger;
+    border-radius: 5px;
+    margin-top: 16px;
+    min-height: 43px;
+    min-width: none;
+    color: #eef0f3;
+    border: 1px solid #4797f3;
+    background-color: #020b16;
+}
+button{
+    cursor: pointer;
+    padding: 10px;
+    margin: 8px;
+    font-size: medium;
+    font-family:'Roboto-local', sans-serif;
+    border-radius: 5px;
+    border: 2px solid #4797f3;
+    background-color: #020b16;
+    color: #4797f3;
+}
+button:hover{
+    border: 2px solid #919ead;
+    color: #919ead;
+}
 .code{
     color: white;
 }

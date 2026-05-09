@@ -209,9 +209,27 @@ function randBuild() {
 </script>
 
 <template>
-<button @click="randBuild">РАНДОМНЫЙ БИЛД</button>
+<button class="rnm-button" @click="randBuild">Let's go gambling! 🎰</button>
 </template>
 
 <style scoped>
-
+.rnm-button{
+  padding: 8px;
+  margin: 5px;
+  border: 2px solid #4797f3;
+  background-color: #020b16;
+  color: #4797f3;
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  font-weight: bold;
+}
+.rnm-button:hover{
+    border: 2px solid #bd47f3;
+    color: #bd47f3;
+}
+.rnm-button.active{
+   transform: translateY(3px);
+}
 </style>
