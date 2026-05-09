@@ -96,7 +96,7 @@ function loadbuild(){
 input{
     font-size: larger;
     border-radius: 5px;
-    margin-top: 16px;
+    margin-top: 15px;
     min-height: 43px;
     min-width: none;
     color: #eef0f3;

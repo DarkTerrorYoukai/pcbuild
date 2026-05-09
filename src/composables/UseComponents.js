@@ -999,7 +999,12 @@ const currentBuild = reactive({
     psu: null,
     mb: null
 })
+const pendingCode = ref(null);
+
+const setPendingCode = (code) => {
+    pendingCode.value = code;
+};
 
 export default function useComponents(){
-  return {pcComponents,cpuAddToBuild, gpuAddToBuild, diskAddToBuild, ramAddToBuild, psuAddToBuild, mbAddToBuild, currentBuild}
+  return {pcComponents,cpuAddToBuild, gpuAddToBuild, diskAddToBuild, ramAddToBuild, psuAddToBuild, mbAddToBuild, currentBuild, pendingCode, setPendingCode}
 }

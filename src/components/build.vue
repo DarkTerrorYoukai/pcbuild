@@ -5,8 +5,53 @@ import randombuild from './randombuild.vue';
 import { computed } from 'vue';
 
 const components = useComponents()
-
+const loadcode = ref('');
 const warning_msg = ref('')
+
+function loadbuild(){
+    const ids = loadcode.value.split('n')
+    if (loadcode.value.includes('c')){
+        const cf = ids.find((comp)=>comp.includes('c'))
+        components.currentBuild.cpu = components.pcComponents.processors.find((cpu)=>cpu.id.includes(cf.replace('c','cpu_')))
+    }
+
+    if (loadcode.value.includes('m')){
+        const mf = ids.find((comp)=>comp.includes('m'))
+        components.currentBuild.mb = components.pcComponents.motherboards.find((mb)=>mb.id.includes(mf.replace('m','mb_')))
+    }
+
+    if (loadcode.value.includes('g')){
+        const gf = ids.find((comp)=>comp.includes('g'))
+        components.currentBuild.gpu = components.pcComponents.gpu.find((gp)=>gp.id.includes(gf.replace('g','gpu_')))
+    }
+
+    if (loadcode.value.includes('r')){
+        const rf = ids.find((comp)=>comp.includes('r'))
+        components.currentBuild.ram = components.pcComponents.ram.find((ram)=>ram.id.includes(rf.replace('r','ram_')))
+    }
+
+    if (loadcode.value.includes('d')){
+        const df = ids.find((comp)=>comp.includes('d'))
+        components.currentBuild.disk = components.pcComponents.storage.find((dsk)=>dsk.id.includes(df.replace('d','disk_')))
+    }
+
+    if (loadcode.value.includes('p')){
+        const pf = ids.find((comp)=>comp.includes('p'))
+        components.currentBuild.psu = components.pcComponents.psu.find((psu)=>psu.id.includes(pf.replace('p','psu_')))
+    }
+    
+}
+watch(
+  () => [components.pendingCode.value, components.pcComponents.processors], 
+  ([newCode, procs]) => {
+    if (newCode && procs && procs.length > 0) {      
+      loadcode.value = newCode;
+      loadbuild();
+      components.setPendingCode(null);
+    }
+  }, 
+  { immediate: true, deep: true }
+);
 
 watch(components.currentBuild, () => {
     warning_msg.value = ''
@@ -100,7 +145,7 @@ const totalPrice = computed(() => {
                     <p class="Sborka">Ваша сборка</p>
                     <div class="TotalPrice">{{ totalPrice.toLocaleString() }} ₽</div>
                 <div class="links">
-                    <router-link :class="botonElg" :to="{ name: 'randombuild'}" class="buildbtn">Случайная сборка</router-link>
+                    <router-link :to="{ name: 'randombuild'}" class="buildbtn">Случайная сборка</router-link>
                     <router-link :to="{ name: 'autobuild'}" class="buildbtn">по бюджету билд</router-link>
                     <router-link :to="{ name: 'buildsave'}" class="buildbtn">Сохранение сборки</router-link>
                 </div>
