@@ -1,11 +1,57 @@
 <script setup>
 import { reactive, ref, watch } from 'vue';
 import useComponents from '../composables/UseComponents';
+import randombuild from './randombuild.vue';
 import { computed } from 'vue';
 
 const components = useComponents()
-
+const loadcode = ref('');
 const warning_msg = ref('')
+
+function loadbuild(){
+    const ids = loadcode.value.split('n')
+    if (loadcode.value.includes('c')){
+        const cf = ids.find((comp)=>comp.includes('c'))
+        components.currentBuild.cpu = components.pcComponents.processors.find((cpu)=>cpu.id.includes(cf.replace('c','cpu_')))
+    }
+
+    if (loadcode.value.includes('m')){
+        const mf = ids.find((comp)=>comp.includes('m'))
+        components.currentBuild.mb = components.pcComponents.motherboards.find((mb)=>mb.id.includes(mf.replace('m','mb_')))
+    }
+
+    if (loadcode.value.includes('g')){
+        const gf = ids.find((comp)=>comp.includes('g'))
+        components.currentBuild.gpu = components.pcComponents.gpu.find((gp)=>gp.id.includes(gf.replace('g','gpu_')))
+    }
+
+    if (loadcode.value.includes('r')){
+        const rf = ids.find((comp)=>comp.includes('r'))
+        components.currentBuild.ram = components.pcComponents.ram.find((ram)=>ram.id.includes(rf.replace('r','ram_')))
+    }
+
+    if (loadcode.value.includes('d')){
+        const df = ids.find((comp)=>comp.includes('d'))
+        components.currentBuild.disk = components.pcComponents.storage.find((dsk)=>dsk.id.includes(df.replace('d','disk_')))
+    }
+
+    if (loadcode.value.includes('p')){
+        const pf = ids.find((comp)=>comp.includes('p'))
+        components.currentBuild.psu = components.pcComponents.psu.find((psu)=>psu.id.includes(pf.replace('p','psu_')))
+    }
+    
+}
+watch(
+  () => [components.pendingCode.value, components.pcComponents.processors], 
+  ([newCode, procs]) => {
+    if (newCode && procs && procs.length > 0) {      
+      loadcode.value = newCode;
+      loadbuild();
+      components.setPendingCode(null);
+    }
+  }, 
+  { immediate: true, deep: true }
+);
 
 watch(components.currentBuild, () => {
     warning_msg.value = ''
@@ -98,7 +144,13 @@ const totalPrice = computed(() => {
                     <div class="Name-Price" >
                     <p class="Sborka">Ваша сборка</p>
                     <div class="TotalPrice">{{ totalPrice.toLocaleString() }} ₽</div>
-                    </div>
+                <div class="links">
+                    <router-link :to="{ name: 'randombuild'}" class="buildbtn">Случайная сборка</router-link>
+                    <router-link :to="{ name: 'autobuild'}" class="buildbtn">по бюджету билд</router-link>
+                    <router-link :to="{ name: 'buildsave'}" class="buildbtn">Сохранение сборки</router-link>
+                </div>
+                </div>
+                    <router-view></router-view>
                     <div class="Specs">
                         <div class="SpecNames">
                             <div class="ram">
@@ -136,26 +188,41 @@ const totalPrice = computed(() => {
                         </div>
                     </div>
         <div class="warning">{{ warning_msg }}</div>
-        
         <button class="boton-elegante">Купить все сразу</button>
         </div>
     </div>
+    <!-- ВЯЧЕСЛАВ СДЕЛАЙ СТРАНИЦУ ОПЛАТЫ -->
     <div class="buildLinks">
-        <router-link :to="{ name: 'randombuild'}" class="buildbtn">Случайный билд</router-link>
-        <router-link :to="{ name: 'editbuild'}" class="buildbtn">свой билд</router-link>
-        <router-link :to="{ name: 'autobuild'}" class="buildbtn">по бюджету билд</router-link>
-        <router-link :to="{ name: 'buildsave'}" class="buildbtn">Сохранение/выгрузка билд</router-link>
         <router-link :to="{ name: 'payment'}" class="buildbtn">Страница оплаты</router-link>
     </div>
-    <router-view></router-view>
 </template>
 
 <style scoped>
+.links{
+    padding: 5px;
+    min-height: 50px;
+    min-width: 600px;
+}
 .buildbtn{
-    color:white;
+    text-decoration: none;
+  padding: 15px;
+  border: 2px solid #1678e9;
+  background-color: #020b16;
+  color: #4797f3;
+  font-size: medium;
+  font-family:'Roboto-local', sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  margin-right: 7px;
 }
 .TotalPrice{
     font-size: 40px;
+    margin-bottom: 20px;
 }
 .SpecPrices{
     display: flex;
@@ -239,8 +306,8 @@ p{
     gap: 15px;
     justify-content: space-around;
     padding: 20px;
-    height: 700px;
-    width: 500px;
+    height: 850px;
+    width: 600px;
     margin-bottom: 50px;
 }
 .selGroup {
