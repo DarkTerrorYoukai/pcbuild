@@ -8,7 +8,7 @@ const footerNavigation = [
     {
         title: 'Навигация',
         links: [
-            { label: 'Главная', route: '', icon: '⌂' },
+            { label: 'Главная', route: 'main', icon: '⌂' },
             { label: 'Сборка ПК', route: 'build', icon: '▱' },
             { label: 'Сборки', route: 'madebuilds', icon: '▰' },
             { label: 'Комплектующие', route: 'components', icon: '▦' },
@@ -120,17 +120,7 @@ function scrollToTop () {
         <div class="footer_bottom">
             <p>© 2026 <span>PC Builder</span>. Все права защищены.</p>
             <p class="footer_made"><span class="footer_heart">♡</span> Сделано с любовью на <span>Vue 3</span></p>
-            <div class="footer_actions">
-                <button class="footer_theme" type="button" @click="changeThemeToDark" v-if="isThemeLight">
-                    <img src="/img/Moon.svg" alt="">
-                    <span>Тёмная тема</span>
-                </button>
-                <button class="footer_theme" type="button" @click="changeThemeToLight" v-if="!isThemeLight">
-                    <img src="/img/Sun.svg" alt="">
-                    <span>Светлая тема</span>
-                </button>
-                <button class="footer_to_top" type="button" aria-label="Наверх" @click="scrollToTop">↑</button>
-            </div>
+            <button class="footer_to_top" type="button" aria-label="Наверх" @click="scrollToTop">↑</button>
         </div>
     </footer>
 </template>
@@ -283,8 +273,7 @@ function scrollToTop () {
 }
 
 .footer_social,
-.footer_to_top,
-.footer_theme {
+.footer_to_top {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -393,29 +382,8 @@ function scrollToTop () {
     vertical-align: middle;
 }
 
-.footer_actions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 18px;
-}
-
-.footer_theme {
-    gap: 12px;
-    min-width: 176px;
-    padding: 0 18px;
-    color: rgba(253, 253, 253, 0.86);
-    font-family: 'Jura_Bold';
-    font-size: 17px;
-    cursor: pointer;
-}
-
-.footer_theme img {
-    width: 24px;
-    height: 24px;
-}
-
 .footer_to_top {
+    justify-self: end;
     width: 58px;
     height: 58px;
     color: rgba(253, 253, 253, 0.9);
