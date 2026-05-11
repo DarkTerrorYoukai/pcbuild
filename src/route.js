@@ -35,7 +35,7 @@ import sortStorage from "./components/sortStorage.vue";
 import sortMother from "./components/sortMother.vue";
 
 const routes = [
-    {path:'/main',component:Main,name:'main'},
+    {path:'/',component:Main,name:'main'},
 
     {path:'/:pathName(.*)', component: Page404, name:'404'},
 
